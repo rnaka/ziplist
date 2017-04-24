@@ -7,11 +7,9 @@ const list1 = ['a', 'b', 'c'];
 const list2 = [1, 2, 3];
 
 function zipList(data1, data2){
-  let final = [];
-  let i = 0;
-  while(i < data1.length){
+  const final = [];
+  for (let i = 0; i < data1.length; i++){
     final.push(data1[i], data2[i]);
-    i++;
   }
   return final;
 }
